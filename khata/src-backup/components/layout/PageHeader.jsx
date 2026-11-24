@@ -1,0 +1,1 @@
+export const PageHeader = ({ children, action }) => <div className="mb-5 flex flex-wrap items-center justify-between gap-3"><h1 className="text-2xl font-bold tracking-tight text-slate-800">{children}</h1>{action}</div>;

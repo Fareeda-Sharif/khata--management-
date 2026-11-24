@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+/* Urdu (RTL): readable Naskh font. Nastaliq chahiye to "Noto Nastaliq Urdu" yahan pehle likh dein. */
+:root[lang="ur"] body {
+  font-family: "Noto Naskh Arabic", "Segoe UI", Tahoma, "Urdu Typesetting", sans-serif;
+  line-height: 1.85;
+}
+/* Arabic/Urdu script mein letter-spacing haroof ka jorr tor deta hai */
+:root[lang="ur"] * {
+  letter-spacing: normal !important;
+}
